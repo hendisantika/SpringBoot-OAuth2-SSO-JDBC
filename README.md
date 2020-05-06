@@ -34,4 +34,23 @@
     CREATE UNIQUE INDEX ix_auth_username ON authorities (username, authority); 
     
     ```
+8. Insert your user, example:
    
+   Go to [this link](https://www.devglan.com/online-tools/bcrypt-hash-generator) to encode your password using BCrypt:
+   
+   ```sql
+    INSERT INTO users 
+    VALUES      ('naruto', 
+                 '$2a$04$OqfaHsz1.I9bzlPeZwuRFOyvyFeDKyOBm5XKhKXGup8Yf9qdP69/2' 
+                 /*naruto*/, 
+                 true); 
+    
+    INSERT INTO authorities 
+                (username, 
+                 authority) 
+    VALUES     ('naruto', 
+                'ROLE_ADMIN'); 
+   ```
+   
+   
+9. Navigate to http://localhost:8082/ui/
