@@ -34,9 +34,17 @@
     CREATE UNIQUE INDEX ix_auth_username ON authorities (username, authority); 
     
     ```
+   Create Table
+   
+   ![Create Table](img/create.png "Create Table")
+   
 8. Insert your user, example:
    
    Go to [this link](https://www.devglan.com/online-tools/bcrypt-hash-generator) to encode your password using BCrypt:
+   
+   Encode Password
+   
+   ![Encode Password](img/bcrypt.png "Encode Password")
    
    ```sql
     INSERT INTO users 
@@ -52,5 +60,23 @@
                 'ROLE_ADMIN'); 
    ```
    
+   Insert User
+   
+   ![Insert User](img/insert.png "Insert User")
    
 9. Navigate to http://localhost:8082/ui/
+    UI Page
+    
+    ![UI Page](img/ui.png "UI Page")
+    
+    Login Page
+    
+    ![Login Page](img/login1.png "Login Page1")
+    
+    Login Page
+    
+    ![Login Page](img/login2.png "Login Page2")
+    
+    Welcome Page
+    
+    ![Welcome Page](img/secure.png "Welcome Page")
