@@ -4,7 +4,7 @@ updates:
     directory: "/spring-security-sso-auth-server"
     schedule:
       interval: daily
-      time: ’05:00'
+      time: '05:00'
       timezone: Asia/Jakarta
     open-pull-requests-limit: 10
   
@@ -12,7 +12,7 @@ updates:
     directory: "/spring-security-sso-ui"
     schedule:
       interval: daily
-      time: ’05:00'
+      time: '05:00'
       timezone: Asia/Jakarta
     open-pull-requests-limit: 10
     
